@@ -1,0 +1,830 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', 'sans-serif';
+}
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+                                            /* navbar */
+.navbar-expand-lg {
+  width: 100%;
+}
+.navbar {
+  padding: 15px 0px!important;
+  background-color: white;
+  z-index: 99;
+}
+.navbar-collapse {
+  flex-grow: inherit;
+  padding-left: 25%;
+}
+.nav-item:hover {
+  background-color: lightgrey;
+}
+.nav-item:hover .drop_down_div {
+  display: block;
+}
+.drop_down_div {
+  position: absolute;
+  background-color: lightgrey;
+  display: none;
+}
+.drop_down_div ul li {
+  padding: 10px 20px;
+}
+.drop_down_div ul li:hover {
+  background-color: rgba(31, 40, 79, 1);
+}
+.drop_down_div ul li:hover a {
+  color: white;
+} 
+.drop_down_div ul li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-link {
+  display: flex;
+}
+.book_btn {
+  padding: 2px 7px;
+  border-radius: 30px;
+  color: white!important;
+  background-color: rgba(60, 186, 121, 1);
+  transition: .3s;
+}
+.btn {
+  color: white; 
+}
+.book_btn:hover {
+  background-color: rgb(13, 103, 56);
+  transition: .3s;
+}
+
+                                          /* home section */
+.home .row {
+  align-items: center;
+}
+.home {
+  position: relative;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  color: rgba(31, 40, 79, 1);
+}
+.home .container {
+  position: relative;
+}
+.home_content {
+  z-index: 2;
+}
+.home_content::before {
+  content: "";
+  position: absolute;
+  background-image: url(/Assests/Image/Assesment-1/Dots.png);
+  width: 70px;
+  height: 100px;
+  background-repeat: no-repeat;
+  top: -15px;
+  left: -10px;
+  background-size: 60px;
+  z-index: -1;
+  display: none;
+}
+
+.darkblue_halfcircle {
+  position: absolute;
+  top: 0px;
+  left: -100px;
+}
+.lightblue_halfcircle {
+  position: absolute;
+  bottom: 0px;
+  left: -100px;
+}
+.home_content {
+  /* padding: 40px 40px 40px 0px; */
+  width: 400px;
+}
+.form-check {
+  margin-right: 10px;
+}
+.home_content h1 {
+  font-weight: 700;
+}
+.home .book_btn {
+  margin-top: 20px;
+  width: 146px!important;
+}
+.home_img{
+  position: relative;
+}
+.home_img img {
+  position: relative;
+  z-index: 11;
+}
+.home_img::after {
+  position: absolute;
+  content: url(/Assests/Image/Assesment-1/Dots.png);
+  top: 0;
+  right: 25%;
+  z-index: 10;
+}
+.home_img::before {
+  position: absolute;
+  content: url(/Assests/Image/Assesment-1/linedhalfround.png);
+  bottom: 11%;
+  left: 1%;
+  z-index: 10;
+}
+.drakblue_fullcircle {
+  position: absolute;
+  bottom: 10px;
+  left: -20px;
+}
+
+                                         /* Clients section */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;  
+  padding: 50px 10px;
+  gap:20px;
+}
+.grid-item {
+  padding: 20px;
+  text-align: center;
+}
+.clients_section h3{
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgba(31, 40, 79, 1);
+}
+.clients_section .grid-item {
+  margin: auto;
+}
+
+                                        /* Tabs section */
+.tabs_section {
+  background-color:  #E5E5E5;
+  line-height: 2;
+}
+.tabs_section p {
+  color: rgba(0, 112, 240, 0.9);
+}
+.tabs_section h3 {
+  color: rgba(31, 40, 79, 1);
+  font-weight: bolder;
+}
+/* .changing_tabs {
+  line-height: 2;
+} */
+.nav-pills {
+  margin-top: 40px;
+}
+.nav-pills .nav-link.active {
+  border-radius: 30px;
+}
+.nav-pills .nav-link {
+  background-color: white;
+  border-radius: 30px;
+  border: 0.5px solid lightgray;
+  margin-right: 7px;
+}
+.nav-link {
+  color: rgba(31, 40, 79, 1);
+  font-weight: 600;
+}
+.tab-pane h4 {
+  margin-top: 40px;
+}
+.tab-pane p {
+  margin-top: 20px;
+  color: rgba(87, 87, 87, 1);
+  font-weight: lighter;
+}
+.card {
+  margin-top: 50px;
+  padding: 30px 40px;
+  width:350px;
+  height: 250px
+}
+.card i {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.card p {
+  color: black;
+}
+
+                                      /* cybersecurity section */
+.cybersecurity_section .container {
+  position: relative;
+}
+.pink_quarter_circle {
+  position: absolute;
+  top: 180px;
+  left: -70px;
+}
+.yellow_half_circle {
+  position: absolute;
+  top: 56%;
+  left: -5px;
+}
+.cybersecurity_img_div{
+  position: relative;
+  padding: 40px 30px 40px 40px;
+}
+.cybersecurity_img_div img {
+  position: relative;
+  z-index: 10;
+}
+.cybersecurity_img_div::before {
+  position: absolute;
+  display: inline-block;
+  background-image: url(/Assests/Image/Assesment-1/img-background-bluebox.png);
+  content: "";
+  width: 400px;
+  height: 456px;
+  left: 5px;
+  bottom: 0;
+}
+.cybersecurity_content h6{
+  color: rgba(0, 112, 240, 0.9);
+}
+.cybersecurity_content h1 {
+  color: rgba(31, 40, 79, 1);
+  font-weight: bolder;
+  margin: 20px 0px;
+}
+.cybersecurity_content p {
+  color: rgba(87, 87, 87, 1);
+}
+.cybersecurity_content p span {
+  color: rgba(31, 40, 79, 1);
+}
+.cybersecurity_content .icon {
+  margin-right: 20px;
+}
+.Schedule_btn {
+  width: 167px;
+  background-color: rgba(0, 112, 240, 0.9);
+  border-radius: 30px;
+  transition: .3s;
+}
+.Schedule_btn:hover {
+  background-color: rgba(5, 61, 125, 0.9);
+  transition: .3s;
+}
+.Schedule_btn button:hover {
+ color: white;
+}
+.cybersecurity_section .grid-container {
+  grid-template-columns: auto auto;
+  
+}
+.cybersecurity_section .grid-item {
+  text-align: left;
+}
+.grid-container .icon {
+  margin-right: 45px;
+  padding: 20px;
+  background-color: #F4F5F7;
+  border-radius: 50%;
+}
+
+                                            /* carousle section */
+.carousel_section {
+  background-color: #E5E5E5;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+ .question_div {
+  color: white;
+  background-color: rgba(31, 56, 79, 1);
+  padding: 50px;
+  border-radius: 30px;
+}
+.question_div .book_btn {
+  margin: 20px auto;
+  width: 146px!important;
+}
+.suggetions p {
+  text-align: left;
+}
+.suggetions i {
+  margin-right: 10px;
+}
+.tick_suggestion {
+  padding: 0pc 20px;
+}
+
+.bookmyshow_card, .aiarbnb_card, .hubspot_card {
+  background-color: white;
+  border-radius: 25px;
+}
+.card_content p {
+  font-size: 13px;
+}
+.card_content {
+  padding-top: 20px;
+}
+.card_content i {
+  margin-right: 10px;
+  color: rgba(46, 197, 206, 1);
+}
+.card_content h3 {
+  font-size: 20px; 
+}
+.hubspot_card {
+  width: 260px;
+  padding: 20px;
+  margin-left: auto;
+}
+.bookmyshow_card {
+  width: 285px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.hubspot {
+  padding-top: 120px;
+}
+.aiarbnb {
+  padding-top: 100px;
+}
+.aiarbnb_card {
+  width: 345px;
+  padding: 20px;
+}
+.member {
+  align-items: flex-start;
+}
+.member img{
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+.carousel {
+  padding-top: 100px;
+  height: 770px;
+}
+.carousel-item {
+  position: relative;
+}
+.realstories {
+  position: absolute;
+  left: 300px;
+  top: 58px;
+}
+.realstories h2 {
+  font-weight: bolder;
+  color: rgba(31, 56, 79, 1);
+  z-index: 2;
+}
+.quatation {
+  color:  rgb(0 112 240 / 20%);
+  position: absolute;
+  top: -20px;
+  left: 190px;
+}
+.quatation i {
+  font-size: 160px;
+}
+.carousel-indicators {
+  margin: 0px auto;
+}
+.carousel-indicators .active {
+  background-color: rgba(31, 56, 79, 1);
+}
+.carousel-indicators button{
+  width: 25px!important;
+  height: 20px;
+}
+.carousel-indicators [data-bs-target] {
+  height: 7px;
+  border-radius: 25px;
+}
+
+.for-sml {
+  display: none;
+}
+.for-sml .carousel {
+  height: 300px;
+  padding-top: 0px;
+  margin: 0px auto;
+  display: flex;
+  /* justify-content: center; */
+}
+.for-sml .bookmyshow_card,.for-sml .aiarbnb_card, .for-sml .hubspot_card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 250px;
+}
+.Realstories_div {
+  display: none;
+  position: relative;
+}
+.quatation_sml {
+  position: absolute;
+  top: -45px;
+}
+.realstories_sml {
+  margin-top: 100px;
+  padding-left: 50px;
+}
+.realstories_sml p {
+  color: rgba(87, 87, 87, 1);
+}
+.realstories_sml h2 {
+  font-weight: bolder;
+}
+.quatation_sml i {
+  font-size: 100px;
+  color:  rgb(0 112 240 / 32%);;
+}
+.for-sml .aiarbnb {
+  padding-top: 0px;
+}
+.for-sml .hubspot {
+  padding-top: 0px;
+  margin: auto;
+  width: 100%;
+}
+
+                                            /* footer section */
+.social_links {
+  margin-top: 20px;
+}
+.social_links i {
+  font-size: 13px;
+}
+.social_links div {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+}
+.company_description p {
+  margin-top: 20px;
+  font-size: 13px;
+  width: 250px;
+}
+footer {
+  color: rgba(81, 84, 88, 1);
+}
+footer ul {
+  line-height: 3;
+}
+footer ul li {
+  cursor: pointer;
+  font-size: 13px;
+}
+footer h4 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.footer-secound {
+  padding-top: 30px;
+}
+.reachus {
+  line-height: 2;
+}
+.reachus h3 {
+  margin-bottom: 20px;
+}
+.reachus p {
+  font-size: 15px;
+}
+.reachus i {
+  margin-top: 5px;
+  margin-right: 20px;
+  color: rgba(0, 112, 240, 0.9);
+}
+.location {
+  width: 275px;
+}
+.copyrights {
+  justify-content: space-between;
+}
+
+
+                                        /* accordian */
+
+/* Custom style */
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  transform: scale(.7) !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+}
+.accordion-item  {
+  border: none!important;
+}
+.footer_sml {
+  display: none;
+}
+.footer-secound {
+  display: block;
+}
+
+
+                                        /* media query */
+
+@media (max-width:1200px) {
+  .navbar-collapse {
+    padding-left: 0;
+  }
+  .navbar>.container {
+    margin: 0px 20px;
+  }
+  .book_btn button {
+    font-size: 12px;
+  }
+  .lightblue_halfcircle {
+    left: -8%;
+  }
+  .darkblue_halfcircle {
+    left: -4%;
+  }
+  .home .book_btn {
+    width: 119px!important;
+  }
+  .clients_section .grid-container {
+    grid-template-columns: auto auto auto auto;
+  }
+  .card {
+    width: 100%;
+  }
+  .cybersecurity_img_div::before {
+    position: absolute;
+    display: inline-block;
+    background-image: url(/Assests/Image/Assesment-1/img-background-bluebox.png);
+    content: "";
+    width: 400px;
+    height: 343px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 5px;
+    bottom: 0px;
+  }
+  .yellow_half_circle {
+    top: 50%;
+  }
+  .realstories {
+    left: 200px;
+  }
+  .quatation {
+    left: 80px;
+  }
+}
+
+@media (max-width:991px) {
+  .navbar .book_btn {
+    display: none;
+  }
+  .brand-logo img{
+    margin-left: 100%;
+  }
+  .home_img {
+    text-align: center;
+  }
+  .lightblue_halfcircle {
+    top: 30%;
+  }
+  .bloomberg, .standford, .eth, .stichfix,
+  .circleup, .badge {
+    display: none;
+  }
+  .clients_section .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+  .navbar .container {
+    justify-content: flex-start;
+  }
+  .tabs_section .row {
+    justify-content: center!important;
+  }
+  .cybersecurity_img_div {
+    text-align: center;
+  }
+  .cybersecurity_img_div::before {
+    position: absolute;
+    display: inline-block;
+    background-image: url(/Assests/Image/Assesment-1/img-background-bluebox.png);
+    content: "";
+    width: 400px;
+    height: 460px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    left: 75px;
+    bottom: 0px;
+  }
+  .pink_quarter_circle {
+    position: absolute;
+    top: 36%;
+    left: 0px;
+  }
+  .yellow_half_circle {
+    top: 60%;
+    left: 50px;
+  }
+  .realstories {
+    left: 100px;
+  }
+  .quatation {
+    left: 7px;
+  }
+  .company_description p {
+    width: 80%;
+  }
+  .social_links {
+    margin-bottom: 30px;
+  }
+  .for-lg {
+    display: none;
+  }
+  .Realstories_div {
+    display: block;
+  }
+  .for-sml {
+    display: block;
+  }
+}
+@media (max-width:767px) {
+  .home_img {
+    display: none;
+  }
+  .darkblue_halfcircle {
+    display: none;
+  }
+  .lightblue_halfcircle {
+    display: none;
+  }
+  .clients_section .grid-container {
+    padding: 0px;
+    gap: 0px;
+  }
+  .cybersecurity_img_div::before {
+    left: 10px;
+  }
+  .pink_quarter_circle {
+    position: absolute;
+    top: 31%;
+    left: -57px;
+  }
+  .yellow_half_circle {
+    top: 55%;
+  }
+  .cybersecurity_section .grid-container {
+    grid-template-columns: auto;
+  }
+  .suggetions {
+  display: block!important;
+  }
+  .tick_suggestion i{
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  .certificates_sociallinks {
+    display: flex;
+    justify-content: space-between;
+  }
+  .list {
+    display: none;
+  }
+  .footer_sml ul li {
+    margin-left: 20px;
+  }
+  .footer_sml {
+    display: block;
+  }
+}
+@media (max-width:659px) {
+  .navbar .container {
+    margin: 0px;
+  }
+  .brand-logo img {
+    margin-left: 20%;
+  }
+  .home_content {
+    margin-top: 50px;
+  }
+  .home_content::before {
+    display: block;
+  }
+  .clients_section .grid-item img{
+    width: 50px;
+  }
+  .clients_section h3 {
+    font-size: 14px;
+  }
+  .tab-pane h4 {
+    display: none;
+  }
+  .changing_tabs a {
+    font-size: 12px!important;
+  }
+  .cybersecurity_section .grid-item {
+    padding: 0px;
+  }
+  .question_div {
+    padding: 10px;
+  }
+  .tab-pane p {
+    font-size: 12px;
+  }
+  .cybersecurity_img_div::before {
+    bottom: -140px;
+    background-size: 300px;
+  }
+  .pink_quarter_circle {
+    position: absolute;
+    top: 33%;
+    left: -2px;
+  }
+  .yellow_half_circle {
+    top: 56%;
+    left: 0px;
+  }
+  .card {
+    margin-top: 25px;
+  }
+  .copyrights p {
+    font-size: 12px;
+  }
+  
+}
+@media (max-width:424px) {
+  .home_content {
+    width: 300px;
+  }
+  .home_content .radio_buttons {
+    display: block!important;
+  }
+  .cybersecurity_img_div::before {
+    width: 100%;
+    bottom: -160px;
+    background-size: 280px;
+  }
+  .pink_quarter_circle img {
+    width: 50px;
+  }
+  .pink_quarter_circle {
+    position: absolute;
+    top: 33%;
+    left: 22px;
+  }
+  .yellow_half_circle {
+    top: 52%;
+  }
+  .grid-container .icon {
+    margin-right: 30px;
+  }
+  .for-sml .bookmyshow_card, .for-sml .aiarbnb_card, .for-sml .hubspot_card {
+    width: 100%;
+  }
+  .copyrights {
+    display: block!important;
+  }
+}
+
+@media (max-width:374px){
+  .brand-logo img {
+    width: 150px;
+  }
+  .nav-pills .nav-link {
+    margin-top: 10px;
+  }
+  .cybersecurity_img_div::before {
+    left: 18px;
+    bottom: -220px;
+    background-size: 220px;
+  }
+  .pink_quarter_circle img {
+    width: 40px;
+  }
+  .pink_quarter_circle {
+    top: 43%;
+  }
+  .yellow_half_circle {
+    top: 58%;
+  }
+  .grid-container .icon {
+    padding: 15px;
+  }
+  .cybersecurity_section .grid-container h4 {
+    font-size: 15px;
+  }
+  .cybersecurity_section .grid-container p {
+    font-size: 12px;
+  }
+  .certificates_sociallinks img {
+    width: 120px;
+  }
+  .social_links div {
+    margin-right: 3px;
+  }
+}
